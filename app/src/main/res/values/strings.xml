@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SQLite</string>
+    <string name="nombre">Nombre:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="email">Email:</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="menu">Nuevo Registro</string>
 </resources>

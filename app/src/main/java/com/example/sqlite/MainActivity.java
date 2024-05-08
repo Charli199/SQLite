@@ -1,24 +1,63 @@
 package com.example.sqlite;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.sqlite.adaptadores.ListaContactosAdaptador;
+import com.example.sqlite.db.DbContactos;
+import com.example.sqlite.entidades.Contactos;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    RecyclerView listaContactos;
+    ArrayList<Contactos> ListaArrayContactos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        listaContactos = findViewById(R.id.listaContactos);
+        listaContactos.setLayoutManager(new LinearLayoutManager(this));
+
+        DbContactos dbContactos = new DbContactos(MainActivity.this);
+
+        ListaArrayContactos = new ArrayList<>();
+
+        ListaContactosAdaptador adapter = new ListaContactosAdaptador(dbContactos.mostrarContactos());
+        listaContactos.setAdapter(adapter);
+
     }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case  R.id.menuNuevo:{
+                nuevoRegistro();
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void nuevoRegistro(){
+        Intent intent = new Intent(this,RegistroActivity.class);
+        startActivity(intent);
+    }
+
 }
