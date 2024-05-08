@@ -31,7 +31,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d9ce552-bd3e-4e45-ae63-503fe3f97bcb" name="Changes" comment="" />
+    <list default="true" id="2a3d2f96-229f-4352-87ed-ceee782325c9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,21 +65,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
-        <option value="layoutResourceFile" />
-        <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2g0Z1Nt3KQpxVt5xGUCk6dOxlzl" />
+  <component name="ProjectId" id="2g9aAbUPkGQTURBhYqsynvpbfUX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -91,13 +84,19 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "last_opened_file_path": "C:/Users/charl/OneDrive/Escritorio/agencia_viaje.db"
+    "last_opened_file_path": "C:/Users/charl/AndroidStudioProjects/SQLite2"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\charl\AndroidStudioProjects\SQLite2\app\src\main\res\layout" />
+      <recent name="C:\Users\charl\AndroidStudioProjects\SQLite2\app\src\main\java\com\example\sqlite" />
+    </key>
     <key name="android.template.2073760580">
       <recent name="com.example.sqlite" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.sqlite.db" />
     </key>
   </component>
   <component name="RunManager">
@@ -172,23 +171,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d9ce552-bd3e-4e45-ae63-503fe3f97bcb" name="Changes" comment="" />
-      <created>1714836239972</created>
+      <changelist id="2a3d2f96-229f-4352-87ed-ceee782325c9" name="Changes" comment="" />
+      <created>1715112104792</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714836239972</updated>
+      <updated>1715112104792</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
